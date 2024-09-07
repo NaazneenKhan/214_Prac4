@@ -20,7 +20,7 @@ protected:
 public:
     Farm(std::string cropType, int capacity);
 
-	Farm(){/* toDO */}
+	Farm(){}
 
 	virtual int getTotalCapacity() = 0;
 

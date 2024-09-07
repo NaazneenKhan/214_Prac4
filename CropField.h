@@ -11,7 +11,7 @@ private:
 	SoilState* soilState;
 
 public:
-    CropField(std::string cropType, int capacity, SoilState* soilstate);
+    CropField(std::string cropType, int capacity, std::string soilstate);
  
 	std::string getCropType() override;
 

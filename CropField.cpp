@@ -1,7 +1,7 @@
 #include "CropField.h"
 
-CropField::CropField(std::string cropType, int capacity, SoilState *soilstate)
-	: Farm(cropType, capacity), soilState(soilState) {
+CropField::CropField(std::string cropType, int capacity, std::string soilstate)
+	: Farm(cropType, capacity), soilState(soilState){
 }
 
 
@@ -20,8 +20,8 @@ void CropField::removeFarmUnit(Farm *farm)
 
 std::string CropField::getSoilStateName() {
 	// will figure this out 
-	//return soilState->getName();
-	return std::string();
+	return soilState->getName();
+	
 }
 
 int CropField::getTotalCapacity()
