@@ -1,7 +1,8 @@
 #ifndef FERTILISERTRUCKFACTORY_H
 #define FERTILISERTRUCKFACTORY_H
+#include "FarmFactory.h"
 
-class FertiliserTruckFactory : FarmFactory {
+class FertiliserTruckFactory : public FarmFactory {
 
 
 public:

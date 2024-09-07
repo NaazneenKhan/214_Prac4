@@ -1,13 +1,15 @@
 #ifndef FARMFACTORY_H
 #define FARMFACTORY_H
 
+#include "Farm.h"
+
 class FarmFactory {
 
 private:
 	Farm* farm;
 
 protected:
-	virtual void createCropField() = 0;
+	virtual Farm* createCropField() = 0;
 
 	virtual void createBarn() = 0;
 };

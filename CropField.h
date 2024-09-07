@@ -1,7 +1,11 @@
 #ifndef CROPFIELD_H
 #define CROPFIELD_H
+#include "Farm.h"
+#include "SoilState.h"
+#include <iostream>
+using namespace std;
 
-class CropField : Farm {
+class CropField : public Farm {
 
 public:
 	SoilState* soilState;
@@ -13,7 +17,7 @@ public:
 public:
 	CropField();
 
-	void setSoil(SoilState soilState);
+	void setSoil(SoilState* soilState);
 };
 
 #endif

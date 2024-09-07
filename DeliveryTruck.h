@@ -1,7 +1,8 @@
 #ifndef DELIVERYTRUCK_H
 #define DELIVERYTRUCK_H
-
-class DeliveryTruck : Trucks {
+#include "Trucks.h"
+#include "Barn.h"
+class DeliveryTruck : public Trucks {
 
 private:
 	int currentAmount;

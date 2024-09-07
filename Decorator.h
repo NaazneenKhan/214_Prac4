@@ -1,7 +1,7 @@
 #ifndef DECORATOR_H
 #define DECORATOR_H
-
-class Decorator : Farm {
+#include "Farm.h"
+class Decorator : public Farm {
 
 public:
 	Farm* farmLand;

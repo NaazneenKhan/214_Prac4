@@ -5,12 +5,12 @@ int FarmUnit::getTotalCapacity() {
 	throw "Not yet implemented";
 }
 
-void FarmUnit::addFarmUnit(Farm farm) {
+void FarmUnit::addFarmUnit(Farm* farm) {
 	// TODO - implement FarmUnit::addFarmUnit
 	throw "Not yet implemented";
 }
 
-void FarmUnit::removeFarmUnit(Farm farm) {
+void FarmUnit::removeFarmUnit(Farm* farm) {
 	// TODO - implement FarmUnit::removeFarmUnit
 	throw "Not yet implemented";
 }

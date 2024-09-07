@@ -1,7 +1,7 @@
 #ifndef DRYSOIL_H
 #define DRYSOIL_H
-
-class DrySoil : SoilState {
+#include "SoilState.h"
+class DrySoil : public SoilState {
 
 
 public:

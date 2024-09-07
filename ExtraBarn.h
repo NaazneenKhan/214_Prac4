@@ -1,7 +1,7 @@
 #ifndef EXTRABARN_H
 #define EXTRABARN_H
-
-class ExtraBarn : Decorator {
+#include "Decorator.h"
+class ExtraBarn : public Decorator {
 
 
 public:

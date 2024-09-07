@@ -1,7 +1,7 @@
 #ifndef DELIVERYTRUCKFACTORY_H
 #define DELIVERYTRUCKFACTORY_H
-
-class DeliveryTruckFactory : FarmFactory {
+#include "FarmFactory.h"
+class DeliveryTruckFactory : public FarmFactory {
 
 
 public:

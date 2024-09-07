@@ -15,7 +15,7 @@ CropField::CropField() {
 	throw "Not yet implemented";
 }
 
-void CropField::setSoil(SoilState soilState) {
+void CropField::setSoil(SoilState* soilState) {
 	// TODO - implement CropField::setSoil
 	throw "Not yet implemented";
 }

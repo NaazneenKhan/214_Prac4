@@ -1,7 +1,7 @@
 #ifndef CROPFIELDFACTORY_H
 #define CROPFIELDFACTORY_H
-
-class CropFieldFactory : FarmFactory {
+#include "FarmFactory.h"
+class CropFieldFactory : public FarmFactory {
 
 
 public:

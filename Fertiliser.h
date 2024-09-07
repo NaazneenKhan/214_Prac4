@@ -1,7 +1,8 @@
 #ifndef FERTILISER_H
 #define FERTILISER_H
+#include "Decorator.h"
 
-class Fertiliser : Decorator {
+class Fertiliser : public Decorator {
 
 
 public:

@@ -1,6 +1,6 @@
 #ifndef BARN_H
 #define BARN_H
-
+#include "Farm.h"
 class Barn : Farm {
 
 public:
