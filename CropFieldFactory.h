@@ -6,7 +6,7 @@ class CropFieldFactory : public FarmFactory {
 
 
 public:
-	Farm* createCropField();
+	Farm* createCropField(std::string cropType, int capacity, SoilState* soilstate);
 };
 
 #endif

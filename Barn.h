@@ -23,6 +23,8 @@ public:
 	virtual Iterator* createIterator() override;
 
 	void setCurrentAmount(int amount);
+
+	virtual void harvest() override;
 };
 
 #endif

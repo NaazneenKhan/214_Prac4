@@ -11,7 +11,7 @@ public:
 
 	virtual void isDone() = 0;
 
-	virtual void currentFarm() = 0;
+	virtual Farm* currentFarm() = 0;
 };
 
 #endif

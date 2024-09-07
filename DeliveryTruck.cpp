@@ -1,21 +1,17 @@
 #include "DeliveryTruck.h"
 
 void DeliveryTruck::callTruck() {
-	// TODO - implement DeliveryTruck::callTruck
-	throw "Not yet implemented";
+	std::cout << "DeliveryTruck has been dispatched to transport crops!" << std::endl;
 }
 
 void DeliveryTruck::startEngine() {
-	// TODO - implement DeliveryTruck::startEngine
-	throw "Not yet implemented";
+	std::cout << "DeliveryTruck engine started." << std::endl;
 }
 
 void DeliveryTruck::buyTruck() {
-	// TODO - implement DeliveryTruck::buyTruck
-	throw "Not yet implemented";
+	std::cout << "DeliveryTruck has been purchased." << std::endl;
 }
 
 void DeliveryTruck::sellTruck() {
-	// TODO - implement DeliveryTruck::sellTruck
-	throw "Not yet implemented";
+	std::cout << "DeliveryTruck has been sold." << std::endl;
 }

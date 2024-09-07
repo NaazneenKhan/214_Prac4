@@ -6,7 +6,7 @@ class BarnFactory : public FarmFactory {
 
 
 public:
-	Farm* createBarn();
+	Farm* createBarn(std::string cropType, int capacity, int currentAmount);
 };
 
 #endif

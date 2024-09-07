@@ -3,6 +3,7 @@
 
 #include "Farm.h"
 #include "Trucks.h"
+#include "SoilState.h"
 
 class FarmFactory {
 
@@ -10,9 +11,9 @@ private:
 	Farm* farm;
 
 protected:
-	virtual Farm* createCropField() = 0;
+	virtual Farm* createCropField(std::string cropType, int capacity, SoilState* soilstate) = 0;
 
-	virtual Farm* createBarn() = 0;
+	virtual Farm* createBarn(std::string cropType, int capacity, int currentAmount) = 0;
 
 	virtual Trucks* createFertiliserTruck() = 0;
 

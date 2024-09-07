@@ -28,6 +28,8 @@ public:
 	virtual Iterator* createIterator() override;
 	CropField();
 
+	virtual void harvest() override ;
+
 	void setSoil(SoilState* newsoilState);
 };
 

@@ -22,6 +22,8 @@ public:
 
 	Farm(){}
 
+	virtual void harvest() = 0;
+
 	virtual int getTotalCapacity() = 0;
 
 	virtual std::string getCropType() = 0;

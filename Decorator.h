@@ -11,7 +11,7 @@ public:
 public:
 	Decorator();
 
-	virtual void harvest() = 0;
+	virtual void harvest() override  = 0;
 };
 
 #endif
