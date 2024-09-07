@@ -1,26 +1,37 @@
 #include "FarmUnit.h"
 
+FarmUnit::FarmUnit(){
+
+}
+
 int FarmUnit::getTotalCapacity() {
-	// TODO - implement FarmUnit::getTotalCapacity
-	throw "Not yet implemented";
+	// use iteratror to traverse composite structure to get all the capcities 
+
+    int totalCapacity = 0;
+    for (Farm* farm : farmLand) {
+        totalCapacity += farm->getTotalCapacity();
+    }
+    return totalCapacity;
+}
+
+std::string FarmUnit::getCropType() {
+    std::string cropTypes;
+    for (Farm* farm : farmLand) {
+        cropTypes += farm->getCropType() + " ";
+    }
+    return cropTypes;
 }
 
 void FarmUnit::addFarmUnit(Farm* farm) {
-	// TODO - implement FarmUnit::addFarmUnit
-	throw "Not yet implemented";
+    farmLand.push_back(farm);
 }
 
 void FarmUnit::removeFarmUnit(Farm* farm) {
-	// TODO - implement FarmUnit::removeFarmUnit
-	throw "Not yet implemented";
+    farmLand.erase(std::remove(farmLand.begin(), farmLand.end(), farm), farmLand.end());
 }
 
-FarmUnit::FarmUnit() {
-	// TODO - implement FarmUnit::FarmUnit
-	throw "Not yet implemented";
+Iterator* FarmUnit:: createIterator() {
+	// naaaaaz do the Iterator 
+	return nullptr;
 }
 
-Iterator* FarmUnit::createIterator() {
-	// TODO - implement FarmUnit::createIterator
-	throw "Not yet implemented";
-}

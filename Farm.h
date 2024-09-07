@@ -1,20 +1,27 @@
 #ifndef FARM_H
 #define FARM_H
 #include <iostream>
-using namespace std;
-#include "Trucks.h"
+//using namespace std; yuck 
+
 #include <vector>
+#include <string>
+
 #include "Farm.h"
 #include "Iterator.h"
+#include "Trucks.h"
 
 class Farm {
 
-private:
-	string cropType;
+protected:
+	std::string cropType;
 	int capacity;
 	std::vector<Trucks*> trucks;
 
 public:
+    Farm(std::string cropType, int capacity);
+
+	Farm(){/* toDO */}
+
 	virtual int getTotalCapacity() = 0;
 
 	virtual std::string getCropType() = 0;
@@ -28,6 +35,8 @@ public:
 	void soilNotification();
 
 	void storageNotification();
+
+	virtual ~Farm();
 };
 
 #endif

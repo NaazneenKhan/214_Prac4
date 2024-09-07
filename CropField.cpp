@@ -1,21 +1,45 @@
 #include "CropField.h"
 
-std::string CropField::getCropType() {
-	// TODO - implement CropField::getCropType
-	throw "Not yet implemented";
+CropField::CropField(std::string cropType, int capacity, SoilState *soilstate)
+	: Farm(cropType, capacity), soilState(soilState) {
+}
+
+
+std::string CropField::getCropType()
+{
+    return cropType;
+}
+
+void CropField::addFarmUnit(Farm *farm)
+{
+}
+
+void CropField::removeFarmUnit(Farm *farm)
+{
 }
 
 std::string CropField::getSoilStateName() {
-	// TODO - implement CropField::getSoilStateName
-	throw "Not yet implemented";
+	// will figure this out 
+	//return soilState->getName();
+	return std::string();
 }
 
-CropField::CropField() {
-	// TODO - implement CropField::CropField
-	throw "Not yet implemented";
+int CropField::getTotalCapacity()
+{
+	// use iteratror to traverse composite structure to get all the capcities 
+    return capacity;
 }
 
-void CropField::setSoil(SoilState* soilState) {
-	// TODO - implement CropField::setSoil
-	throw "Not yet implemented";
+Iterator *CropField::createIterator()
+{
+	//// naz
+    return nullptr;
+}
+
+CropField::CropField()
+{
+}
+
+void CropField::setSoil(SoilState* newsoilState) {
+	this->soilState = newsoilState;
 }

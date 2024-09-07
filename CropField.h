@@ -7,26 +7,28 @@ using namespace std;
 
 class CropField : public Farm {
 
-public:
+private:
 	SoilState* soilState;
 
-	std::string getCropType();
+public:
+    CropField(std::string cropType, int capacity, SoilState* soilstate);
+ 
+	std::string getCropType() override;
 
 	std::string getSoilStateName();
 
-public:
-virtual int getTotalCapacity() override;
+    int getTotalCapacity() override;
 
-	virtual std::string getCropType() override;
+	std::string getCropType() override;
 
-	virtual void addFarmUnit(Farm* farm) override;
+	void addFarmUnit(Farm* farm) override;
 
-	virtual void removeFarmUnit(Farm* farm) override;
+	void removeFarmUnit(Farm* farm) override;
 
 	virtual Iterator* createIterator() override;
 	CropField();
 
-	void setSoil(SoilState* soilState);
+	void setSoil(SoilState* newsoilState);
 };
 
 #endif

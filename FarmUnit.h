@@ -4,19 +4,22 @@
 
 class FarmUnit : public Farm {
 
-public:
-	std::vector<FarmUnit*> farmLand;
-
-	int getTotalCapacity();
-
-	void addFarmUnit(Farm* farm);
-
-	void removeFarmUnit(Farm* farm);
+private:
+	std::vector<Farm*> farmLand;
 
 public:
-	FarmUnit();
+    FarmUnit();
 
-	Iterator* createIterator();
+	int getTotalCapacity() override ;
+
+	std::string getCropType() override;
+
+	void addFarmUnit(Farm* farm) override;
+
+	void removeFarmUnit(Farm* farm) override;
+
+	Iterator* createIterator() override;
+
 };
 
 #endif

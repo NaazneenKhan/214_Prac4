@@ -3,25 +3,24 @@
 #include "Farm.h"
 class Barn : public Farm {
 
-public:
-	int CurrentAmount;
-
-	int getTotalCapacity();
-
-	int getCurrentAmount();
+private:
+	int currentAmount;
 
 public:
-virtual int getTotalCapacity() override;
 
-	virtual std::string getCropType() override;
+	Barn(std::string cropType, int capacity, int currentAmount);
 
-	virtual void addFarmUnit(Farm* farm) override;
+	int getCurrentAmount() ;
 
-	virtual void removeFarmUnit(Farm* farm) override;
+	int getTotalCapacity() override;
+
+	std::string getCropType() override;
+
+	void addFarmUnit(Farm* farm) override;
+
+	void removeFarmUnit(Farm* farm) override;
 
 	virtual Iterator* createIterator() override;
-
-	Barn();
 
 	void setCurrentAmount(int amount);
 };

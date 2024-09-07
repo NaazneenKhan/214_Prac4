@@ -1,21 +1,36 @@
 #include "Barn.h"
 
-int Barn::getTotalCapacity() {
-	// TODO - implement Barn::getTotalCapacity
-	throw "Not yet implemented";
+Barn::Barn(std::string cropType, int capacity, int currentAmount)
+    : Farm(cropType, capacity), currentAmount(currentAmount) {
+}
+
+
+int Barn::getTotalCapacity(){
+    return capacity;
+}
+
+std::string Barn::getCropType(){
+	return cropType ;
+}
+
+void Barn::addFarmUnit(Farm *farm){
+}
+
+void Barn::removeFarmUnit(Farm *farm){
 }
 
 int Barn::getCurrentAmount() {
-	// TODO - implement Barn::getCurrentAmount
-	throw "Not yet implemented";
+	return currentAmount;
 }
 
-Barn::Barn() {
-	// TODO - implement Barn::Barn
-	throw "Not yet implemented";
+Iterator *Barn::createIterator()
+{
+	//// naaaz to iterator 
+    return nullptr;
 }
+
+
 
 void Barn::setCurrentAmount(int amount) {
-	// TODO - implement Barn::setCurrentAmount
-	throw "Not yet implemented";
+	currentAmount = amount;
 }
