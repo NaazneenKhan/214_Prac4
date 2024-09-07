@@ -1,6 +1,7 @@
 #include "BarnFactory.h"
 
-void BarnFactory::createBarn() {
-	// TODO - implement BarnFactory::createBarn
-	throw "Not yet implemented";
+Farm* BarnFactory::createBarn() {
+
+	Farm* newBarn = new Barn();
+	return newBarn;
 }

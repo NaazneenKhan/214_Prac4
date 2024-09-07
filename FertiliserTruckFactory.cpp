@@ -1,6 +1,7 @@
 #include "FertiliserTruckFactory.h"
 
-void FertiliserTruckFactory::createFertiliserTruck() {
-	// TODO - implement FertiliserTruckFactory::createFertiliserTruck
-	throw "Not yet implemented";
+Trucks* FertiliserTruckFactory::createFertiliserTruck() {
+	Trucks* newFertiliserTruck = new FertiliserTruck();
+	return newFertiliserTruck;
+	
 }
