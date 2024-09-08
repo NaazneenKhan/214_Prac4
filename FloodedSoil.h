@@ -6,11 +6,15 @@ class FloodedSoil : public SoilState {
 
 
 public:
-	void harvestCrops();
+    //FloodedSoil (std::string soilName);
 
-	void rain();
+	FloodedSoil();
 
-	void getName();
+	void harvestCrops(CropField* field);
+
+	void rain(CropField* field);
+
+	std::string getName() const;
 };
 
 #endif

@@ -2,15 +2,21 @@
 #define FRUITFULSOIL_H
 #include "SoilState.h"
 
+#include <string>
+
 class FruitfulSoil : public SoilState {
 
 
 public:
-	void harvestCrops();
+    //FruitfulSoil(std::string );
 
-	void rain();
+	FruitfulSoil();
 
-	void getName();
+	void harvestCrops(CropField* field) ;
+
+    void rain(CropField* field) ;
+
+    std::string getName() const ;
 };
 
 #endif

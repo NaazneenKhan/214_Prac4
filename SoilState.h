@@ -1,12 +1,19 @@
 #ifndef SOILSTATE_H
 #define SOILSTATE_H
 
+#include <iostream>
+#include <string>
+
+
+class CropField;
+
 class SoilState {
 
-private:
+protected:
 	std::string name;
 
 public:
+    
 	virtual void harvestCrops() = 0;
 
 	virtual void rain() = 0;
