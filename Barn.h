@@ -15,9 +15,14 @@ public:
 
 	Barn(std::string cropType, int capacity, int currentAmount);
 
-	int getCurrentAmount() ;
+	int getCurrentAmount() override;
 
 	int getTotalCapacity() override;
+
+	void setTotalCapacity(int newCapacity) override {
+        capacity = newCapacity;
+    }
+
 
 	std::string getCropType() override;
 

@@ -1,4 +1,5 @@
 #include "Fertiliser.h"
+#include "CropField.h"
 
 void Fertiliser::increaseProduction() {
 	std::cout << "Production of crops increased!" << std::endl;
@@ -9,8 +10,31 @@ void Fertiliser::addFertiliser() {
 }
 
 void Fertiliser::harvest() {  //////
-	// if statement to check if soil is dry, then harvest
-	// added function to base class (Farm)
+	// farmLand->harvest();
+
+    
+    // if (soilState->getName() == "Dry") {
+    //     addFertiliser();  
+    //     increaseProduction();  
+    //     std::cout << "Fertiliser applied to dry soil!" << std::endl;
+    // }
+
 	farmLand->harvest();
+
+   
+    CropField* cropField = dynamic_cast<CropField*>(farmLand);
+    if (cropField) {
+       
+        SoilState* soilState = cropField->getSoilState();
+
+        
+        if (soilState && soilState->getName() == "Dry") {
+            addFertiliser();  
+            increaseProduction();  
+            std::cout << "Fertiliser applied to dry soil!" << std::endl;
+        }
+    } else {
+        std::cout << "Error: farmLand is not a CropField!" << std::endl;
+    }
 
 }

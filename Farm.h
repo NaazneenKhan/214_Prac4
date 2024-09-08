@@ -9,6 +9,7 @@
 #include "Farm.h"
 #include "Iterator.h"
 #include "Trucks.h"
+#include "Barn.h"
 
 class Farm {
 
@@ -23,6 +24,9 @@ public:
 	virtual void harvest() = 0;
 
 	virtual int getTotalCapacity() = 0;
+	virtual void setTotalCapacity(int newCapacity) = 0;
+
+	virtual int getCurrentAmount()  = 0;
 
 	virtual std::string getCropType() = 0;
 

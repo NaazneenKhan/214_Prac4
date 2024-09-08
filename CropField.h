@@ -19,7 +19,14 @@ public:
 
 	std::string getSoilStateName();
 
+	SoilState* getSoilState() const {
+        return soilState;
+    }
+
     int getTotalCapacity() override;
+	void setTotalCapacity(int newCapacity) override {
+        capacity = newCapacity;
+    }
 
 	std::string getCropType() override;
 

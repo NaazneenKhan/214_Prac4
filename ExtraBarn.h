@@ -5,7 +5,7 @@ class ExtraBarn : public Decorator {
 
 
 public:
-	void getLeftOverCapacity();
+	int getLeftOverCapacity();
 
 	void addExtraBarn();
 
