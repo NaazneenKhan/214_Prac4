@@ -1,7 +1,20 @@
 #include "CropField.h"
 
-CropField::CropField(std::string cropType, int capacity, std::string soilstate)
-	: Farm(cropType, capacity), soilState(soilState){
+CropField::CropField(std::string cropType, int capacity, std::string soilName)
+	: Farm(cropType, capacity){
+		if(soilName == "Dry Soil"){
+			this->soilState = new DrySoil();
+		} else 
+		if(soilName == "Fruitful Soil"){
+			this->soilState = new FruitfulSoil();
+		} else 
+		if(soilName == "Flooded Soil"){
+			this->soilState = new FloodedSoil();
+		} else {
+			this->soilState = new DrySoil();
+		}
+
+
 }
 
 
@@ -19,8 +32,8 @@ void CropField::removeFarmUnit(Farm *farm)
 }
 
 std::string CropField::getSoilStateName() {
-	// will figure this out 
-	return soilState->getName();
+	
+	return this->soilState->getName();
 	
 }
 
