@@ -20,8 +20,6 @@ protected:
 public:
     Farm(std::string cropType, int capacity);
 
-	Farm(){}
-
 	virtual void harvest() = 0;
 
 	virtual int getTotalCapacity() = 0;

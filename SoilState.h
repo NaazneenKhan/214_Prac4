@@ -9,16 +9,18 @@ class CropField;
 
 class SoilState {
 
-protected:
-	std::string name;
+// protected:
+// 	std::string name;
 
 public:
     
-	virtual void harvestCrops() = 0;
+	virtual void harvestCrops(CropField* field) = 0;
 
-	virtual void rain() = 0;
+	virtual void rain(CropField* field) = 0;
 
-	virtual void getName() = 0;
+	virtual std::string getName() const = 0; 
+
+    virtual ~SoilState() = default;  
 };
 
 #endif

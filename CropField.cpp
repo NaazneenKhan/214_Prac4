@@ -1,7 +1,12 @@
 #include "CropField.h"
+#include "DrySoil.h"
+#include "FruitfulSoil.h"
+#include "FloodedSoil.h"
+
 
 CropField::CropField(std::string cropType, int capacity, std::string soilName)
 	: Farm(cropType, capacity){
+
 		if(soilName == "Dry Soil"){
 			this->soilState = new DrySoil();
 		} else 
@@ -33,7 +38,7 @@ void CropField::removeFarmUnit(Farm *farm)
 
 std::string CropField::getSoilStateName() {
 	
-	return this->soilState->getName();
+	return soilState->getName();
 	
 }
 
@@ -55,10 +60,14 @@ Iterator *CropField::createIterator(bool useBFS) ///// not sure
     }
 }
 
-CropField::CropField()
-{
+CropField::CropField() : Farm("", 0), soilState(nullptr) {
+  
 }
 
-void CropField::setSoil(SoilState* newsoilState) {
-	this->soilState = newsoilState;
+void CropField::setSoil(SoilState* newSoilState) {
+    if (this->soilState != nullptr) {
+        delete this->soilState;  
+    }
+    this->soilState = newSoilState;
 }
+
