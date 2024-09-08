@@ -37,11 +37,11 @@ BreadthFirstTraversal::BreadthFirstTraversal(const std::vector<Farm*>& farms) {
     }
     }
 
-    bool BreadthFirstTraversal::isDone() const  {
+    bool BreadthFirstTraversal::isDone()   {
         return farmQueue.empty(); 
     }
 
-    Farm* BreadthFirstTraversal::currentFarm() const  {
+    Farm* BreadthFirstTraversal::currentFarm()   {
         if (!isDone()) {
             return farmQueue.front(); 
         }

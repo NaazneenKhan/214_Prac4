@@ -37,11 +37,11 @@ DepthFirstTraversal:: DepthFirstTraversal(const std::vector<Farm*>& farms) {
     }
     }
 
-    bool DepthFirstTraversal::isDone() const  {
+    bool DepthFirstTraversal::isDone()   {
         return farmStack.empty();  
     }
 
-    Farm* DepthFirstTraversal::currentFarm() const  {
+    Farm* DepthFirstTraversal::currentFarm()   {
         if (!isDone()) {
             return farmStack.top();  
         }

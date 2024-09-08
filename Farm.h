@@ -32,7 +32,7 @@ public:
 
 	virtual void removeFarmUnit(Farm* farm) = 0;
 
-	virtual Iterator* createIterator() = 0;
+	virtual Iterator* createIterator(bool useBFS) = 0;
 
 	void soilNotification();
 

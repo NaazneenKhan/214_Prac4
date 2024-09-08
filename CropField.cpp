@@ -30,10 +30,16 @@ int CropField::getTotalCapacity()
     return capacity;
 }
 
-Iterator *CropField::createIterator()
+Iterator *CropField::createIterator(bool useBFS) ///// not sure
 {
-	//// naz
-    return nullptr;
+	std::vector<Farm*> farms;
+    farms.push_back(this);
+
+	if (useBFS) {
+        return new BreadthFirstTraversal(farms);////
+    } else {
+        return new DepthFirstTraversal(farms);
+    }
 }
 
 CropField::CropField()

@@ -1,6 +1,11 @@
 #ifndef BARN_H
 #define BARN_H
 #include "Farm.h"
+#include "Iterator.h"
+#include "Breadth-FirstTraversal.h"
+#include "Depth-FirstTraversal.h"
+
+
 class Barn : public Farm {
 
 private:
@@ -20,7 +25,7 @@ public:
 
 	void removeFarmUnit(Farm* farm) override;
 
-	virtual Iterator* createIterator() override;
+	virtual Iterator* createIterator(bool useBFS)  ;
 
 	void setCurrentAmount(int amount);
 
