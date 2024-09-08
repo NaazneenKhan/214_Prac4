@@ -21,6 +21,8 @@ protected:
 public:
     Farm(std::string cropType, int capacity);
 
+	Farm(); // In decorator error, "no default constructor exists for farm"
+
 	virtual void harvest() = 0;
 
 	virtual int getTotalCapacity() = 0;
