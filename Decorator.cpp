@@ -1,8 +1,7 @@
 #include "Decorator.h"
 
-Decorator::Decorator(Farm* farm) {
-	// TODO - implement Decorator::Decorator
-	throw "Not yet implemented";
+Decorator::Decorator(Farm* farm) { //
+	this->farmLand = farm;
 }
 
 Decorator::Decorator() {

@@ -9,7 +9,7 @@ public:
 
 	virtual void next() = 0;
 
-	virtual void isDone() = 0;
+	virtual bool isDone() = 0;
 
 	virtual Farm* currentFarm() = 0;
 };

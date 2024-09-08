@@ -43,6 +43,12 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "__hash_table": "cpp",
+        "__node_handle": "cpp",
+        "deque": "cpp",
+        "optional": "cpp",
+        "stack": "cpp",
+        "unordered_map": "cpp"
     }
 }

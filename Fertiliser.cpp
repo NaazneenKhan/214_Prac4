@@ -8,7 +8,7 @@ void Fertiliser::addFertiliser() {
 	std::cout << "Fertiliser added!" << std::endl;
 }
 
-void Fertiliser::harvest() { 
+void Fertiliser::harvest() {  //////
 	// if statement to check if soil is dry, then harvest
 	// added function to base class (Farm)
 	farmLand->harvest();

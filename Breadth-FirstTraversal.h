@@ -15,13 +15,13 @@ private:
 public:
     BreadthFirstTraversal(const std::vector<Farm*>& farms) ;
 
-    void firstFarm()  ;
+    void firstFarm()  override;
 
-    void next()  ;
+    void next() override ;
 
-    bool isDone() const  ;
+    bool isDone()  override ;
     
-    Farm* currentFarm() const ;
+    Farm* currentFarm() override ;
 };
 
 #endif // BREADTHFIRSTTRAVERSAL_H

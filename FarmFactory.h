@@ -11,7 +11,7 @@ private:
 	Farm* farm;
 
 protected:
-	virtual Farm* createCropField(std::string cropType, int capacity, SoilState* soilstate) = 0;
+	virtual Farm* createCropField(std::string cropType, int capacity, std::string soilstate) = 0;
 
 	virtual Farm* createBarn(std::string cropType, int capacity, int currentAmount) = 0;
 

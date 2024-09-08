@@ -2,6 +2,8 @@
 #define CROPFIELD_H
 #include "Farm.h"
 #include "SoilState.h"
+#include "Breadth-FirstTraversal.h"
+#include "Depth-FirstTraversal.h"
 #include <iostream>
 using namespace std;
 
@@ -25,7 +27,7 @@ public:
 
 	void removeFarmUnit(Farm* farm) override;
 
-	virtual Iterator* createIterator() override;
+	virtual Iterator* createIterator(bool useBFS) override;
 	CropField();
 
 	virtual void harvest() override ;
