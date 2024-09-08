@@ -25,14 +25,16 @@ int Barn::getCurrentAmount() {
 
 Iterator *Barn::createIterator(bool useBFS) //// not sure
 {
-	std::vector<Farm*> farms;
-    farms.push_back(this);
+	// std::vector<Farm*> farms;
+    // farms.push_back(this);
 
-	if (useBFS) {
-        return new BreadthFirstTraversal(farms);////
-    } else {
-        return new DepthFirstTraversal(farms);
-    }
+	// if (useBFS) {
+    //     return new BreadthFirstTraversal(farms);////
+    // } else {
+    //     return new DepthFirstTraversal(farms);
+    // }
+
+	return nullptr;
 }
 
 

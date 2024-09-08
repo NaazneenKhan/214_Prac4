@@ -30,8 +30,18 @@ void FarmUnit::removeFarmUnit(Farm* farm) {
     farmLand.erase(std::remove(farmLand.begin(), farmLand.end(), farm), farmLand.end());
 }
 
-Iterator* FarmUnit:: createIterator() {
-	// naaaaaz do the Iterator 
-	return nullptr;
+Iterator* FarmUnit:: createIterator(bool useBFS) {
+    std::vector<Farm*> farms;
+
+    
+    for (Farm* farm : farmLand) {
+        farms.push_back(farm);  
+    }
+
+    if (useBFS) {
+        return new BreadthFirstTraversal(farms);
+    } else {
+        return new DepthFirstTraversal(farms);
+    }
 }
 
