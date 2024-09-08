@@ -1,16 +1,20 @@
 #include "ExtraBarn.h"
+// #include "Barn.h"
 
-void ExtraBarn::getLeftOverCapacity() {
-	// TODO - implement ExtraBarn::getLeftOverCapacity
-	throw "Not yet implemented";
+int ExtraBarn::getLeftOverCapacity() {
+	int leftOverCapacity = farmLand->getTotalCapacity() - farmLand->getCurrentAmount();
+    std::cout << "Leftover capacity: " << leftOverCapacity << std::endl;
+    return leftOverCapacity;
 }
 
 void ExtraBarn::addExtraBarn() {
-	// TODO - implement ExtraBarn::addExtraBarn
-	throw "Not yet implemented";
+	int newCapacity = farmLand->getTotalCapacity() + 100;  
+    farmLand->setTotalCapacity(newCapacity);
+    std::cout << "Extra barn added! New total capacity: " << newCapacity << std::endl;
+
 }
 
 void ExtraBarn::harvest() {
-	// TODO - implement ExtraBarn::harvest
-	throw "Not yet implemented";
+	farmLand->harvest();  
+    std::cout << "Harvesting from barn with extra capacity!" << std::endl;
 }
