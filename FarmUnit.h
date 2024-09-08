@@ -1,6 +1,10 @@
 #ifndef FARMUNIT_H
 #define FARMUNIT_H
 #include "Farm.h"
+#include "Iterator.h"
+#include "Breadth-FirstTraversal.h"
+#include "Depth-FirstTraversal.h"
+
 
 class FarmUnit : public Farm {
 
@@ -18,7 +22,7 @@ public:
 
 	void removeFarmUnit(Farm* farm) override;
 
-	Iterator* createIterator() override;
+	Iterator* createIterator(bool useBFS) override;
 
 };
 
