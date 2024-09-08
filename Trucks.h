@@ -5,7 +5,7 @@ class Trucks {
 
 
 public:
-	virtual void callTruck() = 0;
+	virtual void update(Farm* farm) = 0; 
 
 	virtual void startEngine() = 0;
 

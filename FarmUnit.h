@@ -12,7 +12,7 @@ private:
 	std::vector<Farm*> farmLand;
 
 public:
-    FarmUnit();
+    FarmUnit(std::string cropType, int capacity);
 
 	int getTotalCapacity() override ;
 

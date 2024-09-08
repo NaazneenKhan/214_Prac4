@@ -9,10 +9,10 @@ class FertiliserTruck : public Trucks {
 
 private:
 	SoilState* soilState;
-	CropField* farm;
+	CropField* cropField;
 
 public:
-	void callTruck();
+    void update(Farm* farm) override;
 
 	void startEngine();
 

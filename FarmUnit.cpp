@@ -1,8 +1,9 @@
 #include "FarmUnit.h"
 
-FarmUnit::FarmUnit(){
-
+FarmUnit::FarmUnit(std::string cropType, int capacity): Farm(cropType, capacity){
+	
 }
+
 
 int FarmUnit::getTotalCapacity() {
 	// use iteratror to traverse composite structure to get all the capcities 

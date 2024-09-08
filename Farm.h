@@ -32,9 +32,11 @@ public:
 
 	virtual Iterator* createIterator(bool useBFS) = 0;
 
-	void soilNotification();
+	void addObserver(Trucks* observer);
 
-	void storageNotification();
+    void removeObserver(Trucks* observer);
+
+	void notifyObservers();
 
 	virtual ~Farm();
 };

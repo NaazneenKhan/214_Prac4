@@ -71,5 +71,6 @@ void CropField::setSoil(SoilState* newSoilState) {
         delete this->soilState;  
     }
     this->soilState = newSoilState;
+	notifyObservers();
 }
 

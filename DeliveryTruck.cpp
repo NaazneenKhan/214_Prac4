@@ -1,8 +1,12 @@
 #include "DeliveryTruck.h"
 
-void DeliveryTruck::callTruck() {
-	std::cout << "DeliveryTruck has been dispatched to transport crops!" << std::endl;
+void DeliveryTruck::update(Farm* farm){
+	if (barn->getCurrentAmount() >= barn->getTotalCapacity() * 0.8) {
+		std::cout << "Delivery Truck dispatched to collect crops.\n";
+		startEngine();
+	}
 }
+
 
 void DeliveryTruck::startEngine() {
 	std::cout << "DeliveryTruck engine started." << std::endl;

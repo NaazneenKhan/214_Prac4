@@ -1,7 +1,10 @@
 #include "FertiliserTruck.h"
 
-void FertiliserTruck::callTruck() {
-	std::cout << "FertiliserTruck has been dispatched to deliver fertiliser!" << std::endl;
+void FertiliserTruck::update(Farm *farm){
+	if (cropField->getSoilStateName() == "Dry Soil") {
+		std::cout << "Fertilizer Truck dispatched to fertilize the field.\n";
+		startEngine();
+	}
 }
 
 void FertiliserTruck::startEngine() {

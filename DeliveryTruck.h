@@ -6,10 +6,10 @@ class DeliveryTruck : public Trucks {
 
 private:
 	int currentAmount;
-	Barn* farm;
+	Barn* barn;
 
 public:
-	void callTruck();
+    void update(Farm* farm) override;
 
 	void startEngine();
 

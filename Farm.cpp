@@ -4,15 +4,23 @@ Farm::Farm(std::string cropType, int capacity)
     : cropType(cropType), capacity(capacity) {
 }
 
-void Farm::soilNotification() {
-	// TODO - implement Farm::soilNotification
-	throw "Not yet implemented";
+void Farm::addObserver(Trucks *observer){
+	trucks.push_back(observer);
 }
 
-void Farm::storageNotification() {
-	// TODO - implement Farm::storageNotification
-	throw "Not yet implemented";
+void Farm::removeObserver(Trucks *observer)
+{
+	trucks.erase(std::remove(trucks.begin(), trucks.end(), observer), trucks.end());
 }
+
+
+void Farm::notifyObservers()
+{
+	for (Trucks* observer : trucks) {
+        observer->update(this);
+    }
+}
+
 
 Farm::~Farm()
 {

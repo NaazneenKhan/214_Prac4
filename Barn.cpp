@@ -41,4 +41,5 @@ Iterator *Barn::createIterator(bool useBFS) //// not sure
 
 void Barn::setCurrentAmount(int amount) {
 	currentAmount = amount;
+	notifyObservers();
 }
