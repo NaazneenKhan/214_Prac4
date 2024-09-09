@@ -10,6 +10,13 @@ public:
 	void addExtraBarn();
 
 	void harvest();
+
+	virtual int getTotalCapacity(){} ;
+    virtual void setTotalCapacity(int newCapacity){};
+
+    virtual int getCurrentAmount() {};
+
+    virtual std::string getCropType() {};
 };
 
 #endif

@@ -1,4 +1,5 @@
 #include "FarmUnit.h"
+#include <algorithm> 
 
 FarmUnit::FarmUnit(std::string cropType, int capacity): Farm(cropType, capacity){
 
@@ -44,9 +45,15 @@ std::string FarmUnit::getCropType() {
     return cropTypes;
 }
 
-void FarmUnit::harvest()
-{
+void FarmUnit::harvest() {
+    std::cout << "Harvesting farm unit: " << cropType << std::endl;
+    
+    // Call harvest on all farm units contained within this FarmUnit
+    for (Farm* farm : farmLand) {
+        farm->harvest();
+    }
 }
+
 
 void FarmUnit::addFarmUnit(Farm* farm) {
     farmLand.push_back(farm);

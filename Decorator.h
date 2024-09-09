@@ -5,13 +5,18 @@ class Decorator : public Farm {
 
 public:
 	Farm* farmLand;
-
 	Decorator(Farm* farm);
 
-public:
 	Decorator();
 
-	virtual void harvest() override  = 0;
+	virtual void harvest(){}
+
+	virtual int getTotalCapacity(){} ;
+    virtual void setTotalCapacity(int newCapacity){};
+
+    virtual int getCurrentAmount() {};
+
+    virtual std::string getCropType() {};
 };
 
 #endif

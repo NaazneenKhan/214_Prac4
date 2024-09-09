@@ -2,6 +2,9 @@
 #define DELIVERYTRUCK_H
 #include "Trucks.h"
 #include "Barn.h"
+
+class Barn;
+
 class DeliveryTruck : public Trucks {
 
 private:
@@ -9,6 +12,8 @@ private:
 	Barn* barn;
 
 public:
+    DeliveryTruck(){};
+
     void update(Farm* farm) override;
 
 	void startEngine();
@@ -16,6 +21,8 @@ public:
 	void buyTruck();
 
 	void sellTruck();
+
+	virtual ~DeliveryTruck() {}
 };
 
 #endif

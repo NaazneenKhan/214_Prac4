@@ -12,6 +12,8 @@ private:
 	CropField* cropField;
 
 public:
+    FertiliserTruck(){};
+
     void update(Farm* farm) override;
 
 	void startEngine();
@@ -19,6 +21,8 @@ public:
 	void buyTruck();
 
 	void sellTruck();
+
+	virtual ~FertiliserTruck() {}
 };
 
 #endif

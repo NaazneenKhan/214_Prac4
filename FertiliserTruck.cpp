@@ -1,7 +1,9 @@
 #include "FertiliserTruck.h"
 
-void FertiliserTruck::update(Farm *farm){
-	if (cropField->getSoilStateName() == "Dry Soil") {
+
+void FertiliserTruck::update(Farm *farm)
+{
+    if (cropField->getSoilStateName() == "Dry Soil") {
 		std::cout << "Fertilizer Truck dispatched to fertilize the field.\n";
 		startEngine();
 	}

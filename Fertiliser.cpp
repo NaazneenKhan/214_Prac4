@@ -9,32 +9,18 @@ void Fertiliser::addFertiliser() {
 	std::cout << "Fertiliser added!" << std::endl;
 }
 
-void Fertiliser::harvest() {  //////
-	// farmLand->harvest();
+void Fertiliser::harvest() {
+    // First, call the original harvest on the wrapped farm unit
+    farmLand->harvest();
 
-    
-    // if (soilState->getName() == "Dry") {
-    //     addFertiliser();  
-    //     increaseProduction();  
-    //     std::cout << "Fertiliser applied to dry soil!" << std::endl;
-    // }
-
-	farmLand->harvest();
-
-   
+    // Additional behavior: add fertiliser to improve production if soil is dry
     CropField* cropField = dynamic_cast<CropField*>(farmLand);
-    if (cropField) {
-       
-        SoilState* soilState = cropField->getSoilState();
-
-        
-        if (soilState && soilState->getName() == "Dry") {
-            addFertiliser();  
-            increaseProduction();  
-            std::cout << "Fertiliser applied to dry soil!" << std::endl;
-        }
-    } else {
-        std::cout << "Error: farmLand is not a CropField!" << std::endl;
+    if (cropField && cropField->getSoilState()->getName() == "Dry") {
+        addFertiliser();
+        increaseProduction();
+        std::cout << "Fertiliser applied during harvest!" << std::endl;
     }
-
 }
+
+
+

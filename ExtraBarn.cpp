@@ -15,6 +15,10 @@ void ExtraBarn::addExtraBarn() {
 }
 
 void ExtraBarn::harvest() {
-	farmLand->harvest();  
-    std::cout << "Harvesting from barn with extra capacity!" << std::endl;
+    // First, call the original harvest on the wrapped farm unit
+    farmLand->harvest();
+
+    // Additional behavior: increase barn capacity before harvest
+    addExtraBarn();
+    std::cout << "Harvesting from a barn with extra capacity!" << std::endl;
 }

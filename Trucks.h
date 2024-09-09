@@ -1,6 +1,8 @@
 #ifndef TRUCKS_H
 #define TRUCKS_H
 
+class Farm;
+
 class Trucks {
 
 

@@ -44,6 +44,10 @@ void Barn::setCurrentAmount(int amount) {
 	notifyObservers();
 }
 
-void Barn::harvest()
-{
+void Barn::harvest() {
+    std::cout << "Harvesting from Barn: " << cropType << " with " << currentAmount << " units." << std::endl;
+
+    // After harvesting, you might want to clear the barn or reduce the current amount.
+    currentAmount = 0;
 }
+

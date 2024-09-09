@@ -1,4 +1,5 @@
 #include "Farm.h"
+#include <algorithm> 
 
 Farm::Farm(std::string cropType, int capacity)
     : cropType(cropType), capacity(capacity) {

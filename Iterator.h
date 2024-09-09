@@ -1,6 +1,9 @@
 #ifndef ITERATOR_H
 #define ITERATOR_H
 
+class Farm;
+
+
 class Iterator {
 
 
