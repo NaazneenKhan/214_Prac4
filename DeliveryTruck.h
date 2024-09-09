@@ -12,11 +12,11 @@ private:
 	Barn* barn;
 
 public:
-    DeliveryTruck(){};
+    
 
-    void update(Farm* farm) override;
+    void update(Farm* farm) ;
 
-	void startEngine();
+	void startEngine() ;
 
 	void buyTruck();
 

@@ -1,4 +1,4 @@
-OBJS	= Farmer.o Farm.o FarmUnit.o Barn.o CropField.o FloodedSoil.o FruitfulSoil.o DrySoil.o FarmFactory.o FertiliserTruckFactory.o DeliveryTruckFactory.o CropFieldFactory.o BarnFactory.o Decorator.o ExtraBarn.o Fertiliser.o Depth-FirstTraversal.o Breadth-FirstTraversal.o DeliveryTruck.o testingMain.o
+OBJS	= Farmer.o Farm.o FarmUnit.o Barn.o CropField.o FloodedSoil.o FruitfulSoil.o DrySoil.o FarmFactory.o FertiliserTruckFactory.o DeliveryTruckFactory.o CropFieldFactory.o BarnFactory.o Decorator.o ExtraBarn.o Fertiliser.o Depth-FirstTraversal.o Breadth-FirstTraversal.o DeliveryTruck.o FertiliserTruck.o testingMain.o
 SOURCE	= Farmer.cpp Farm.cpp FarmUnit.cpp Barn.cpp CropField.cpp FloodedSoil.cpp FruitfulSoil.cpp DrySoil.cpp FarmFactory.cpp FertiliserTruckFactory.cpp DeliveryTruckFactory.cpp CropFieldFactory.cpp BarnFactory.cpp Decorator.cpp ExtraBarn.cpp Fertiliser.cpp Depth-FirstTraversal.cpp Breadth-FirstTraversal.cpp DeliveryTruck.cpp testingMain.cpp
 HEADER	= Farmer.h Farm.h FarmUnit.h Barn.h CropField.h SoilSate.h FloodedSoil.h FruitfulSoil.h DrySoil.h FarmFactory.h FertiliserTruckFactory.h DeliveryTruckFactory.h CropFieldFactory.h BarnFactory.h Decorator.h ExtraBarn.h Fertiliser.h Iterator.h Depth-FirstTraversal.h Breadth-FirstTraversal.h Trucks.h DeliveryTruck.h
 OUT	= a.out
@@ -65,6 +65,8 @@ Depth-FirstTraversal.o: Depth-FirstTraversal.cpp
 Breadth-FirstTraversal.o: Breadth-FirstTraversal.cpp
 	$(CC) $(FLAGS) Breadth-FirstTraversal.cpp -lcppunit
 
+FertiliserTruck.o: FertiliserTruck.cpp
+	$(CC) $(FLAGS) FertiliserTruck.cpp -lcppunit
 DeliveryTruck.o: DeliveryTruck.cpp
 	$(CC) $(FLAGS) DeliveryTruck.cpp -lcppunit
 

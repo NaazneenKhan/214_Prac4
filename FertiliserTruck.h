@@ -4,6 +4,9 @@
 #include "SoilState.h"
 #include "CropField.h"
 
+class CropField;
+class SoilState;
+
 
 class FertiliserTruck : public Trucks {
 
@@ -12,17 +15,17 @@ private:
 	CropField* cropField;
 
 public:
-    FertiliserTruck(){};
+    FertiliserTruck() : soilState(nullptr), cropField(nullptr) {}
 
-    void update(Farm* farm) override;
+    void update(Farm* farm);
 
-	void startEngine();
+	void startEngine()  ;
 
-	void buyTruck();
+	void buyTruck() ;
 
-	void sellTruck();
+	void sellTruck() ;
 
-	virtual ~FertiliserTruck() {}
+	virtual ~FertiliserTruck(){}
 };
 
 #endif
