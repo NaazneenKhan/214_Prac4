@@ -11,12 +11,14 @@ public:
 
 	void harvest();
 
-	virtual int getTotalCapacity(){} ;
     virtual void setTotalCapacity(int newCapacity){};
 
-    virtual int getCurrentAmount() {};
+	virtual int getTotalCapacity()override { return 0;} 
 
-    virtual std::string getCropType() {};
+    virtual int getCurrentAmount() override { return 0;};
+
+    virtual std::string getCropType() override { return cropType;};
+
 };
 
 #endif

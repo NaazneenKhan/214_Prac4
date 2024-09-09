@@ -36,7 +36,7 @@ public:
 
 	virtual Iterator* createIterator(bool useBFS);// override;
 
-	int getCurrentAmount(); //override;
+	virtual int getCurrentAmount()override{return 0;}
 
 	CropField();
 

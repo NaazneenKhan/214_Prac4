@@ -15,6 +15,8 @@ public:
 	virtual bool isDone() = 0;
 
 	virtual Farm* currentFarm() = 0;
+
+	virtual ~Iterator() = default;
 };
 
 #endif

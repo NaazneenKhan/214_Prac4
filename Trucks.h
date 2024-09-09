@@ -14,6 +14,8 @@ public:
 	virtual void buyTruck() = 0;
 
 	virtual void sellTruck() = 0;
+
+	virtual ~Trucks() = default;
 };
 
 #endif

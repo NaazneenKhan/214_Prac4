@@ -30,7 +30,7 @@ public:
 
 	void removeFarmUnit(Farm* farm);// override;
 
-	virtual std::string getSoilStateName() {} ;
+	virtual std::string getSoilStateName() {return "Dry Soil";} ;
 
 
 	virtual Iterator* createIterator(bool useBFS)  ;

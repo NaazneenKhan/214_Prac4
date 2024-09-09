@@ -62,9 +62,7 @@ Iterator *CropField::createIterator(bool useBFS) ///// not sure
 	return nullptr;
 }
 
-int CropField::getCurrentAmount()
-{
-}
+
 
 CropField::CropField() : Farm("", 0), soilState(nullptr) {
   
