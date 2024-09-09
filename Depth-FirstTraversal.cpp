@@ -21,14 +21,14 @@ DepthFirstTraversal:: DepthFirstTraversal(const std::vector<Farm*>& farms) {
         //  FertiliserTruck if certain conditions are met
         if (currentFarm->getCropType() == "Wheat") {
             FertiliserTruck* truck = new FertiliserTruck();
-            truck->callTruck();  
+            truck->update(currentFarm);  
             std::cout << "FertiliserTruck dispatched for Wheat farm!" << std::endl;
         }
 
         //  DeliveryTruck- capacity
         if (currentFarm->getTotalCapacity() > 300) {
             DeliveryTruck* truck = new DeliveryTruck();
-            truck->callTruck();  
+            truck->update(currentFarm);  
             std::cout << "DeliveryTruck dispatched for farm with large capacity!" << std::endl;
         }
 

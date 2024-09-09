@@ -1,8 +1,8 @@
 #include "CropFieldFactory.h"
 
-Farm* CropFieldFactory::createCropField(std::string cropType, int capacity, std::string soilstate) { // change in other classes 
-	Farm* newCropField = new CropField(cropType, capacity, soilstate);
-	return newCropField;
-
-	// return new CropField();
+// Create a CropField object with given crop type, capacity, and soil state
+Farm* CropFieldFactory::createCropField(std::string cropType, int capacity, std::string soilstate) {
+    return new CropField(cropType, capacity, soilstate);
 }
+
+

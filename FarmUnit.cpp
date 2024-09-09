@@ -1,7 +1,7 @@
 #include "FarmUnit.h"
 
 FarmUnit::FarmUnit(std::string cropType, int capacity): Farm(cropType, capacity){
-	
+
 }
 
 
@@ -15,12 +15,37 @@ int FarmUnit::getTotalCapacity() {
     return totalCapacity;
 }
 
+void FarmUnit::setTotalCapacity(int newCapacity)
+{ 
+	this->capacity = newCapacity;
+}
+
+int FarmUnit::getCurrentAmount()
+{
+    int currentAmount = 0;
+
+    for (Farm* farm : farmLand) {
+        // Check if the farm unit is a Barn
+        Barn* barn = dynamic_cast<Barn*>(farm);
+        if (barn != nullptr) {
+            // Add the current amount from the Barn
+            currentAmount += barn->getCurrentAmount();
+        }
+    }
+
+    return currentAmount;
+}
+
 std::string FarmUnit::getCropType() {
     std::string cropTypes;
     for (Farm* farm : farmLand) {
         cropTypes += farm->getCropType() + " ";
     }
     return cropTypes;
+}
+
+void FarmUnit::harvest()
+{
 }
 
 void FarmUnit::addFarmUnit(Farm* farm) {

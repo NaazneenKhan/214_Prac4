@@ -26,9 +26,9 @@ public:
 
 	std::string getCropType() override;
 
-	void addFarmUnit(Farm* farm) override;
+	void addFarmUnit(Farm* farm);// override;
 
-	void removeFarmUnit(Farm* farm) override;
+	void removeFarmUnit(Farm* farm);// override;
 
 	virtual Iterator* createIterator(bool useBFS)  ;
 

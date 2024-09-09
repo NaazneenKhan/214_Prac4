@@ -1,13 +1,13 @@
 #ifndef FERTILISERTRUCKFACTORY_H
 #define FERTILISERTRUCKFACTORY_H
+
 #include "FarmFactory.h"
 #include "FertiliserTruck.h"
 
-class FertiliserTruckFactory : public FarmFactory {
-
-
+class FertiliserTruckFactory {
 public:
-	Trucks* createFertiliserTruck();
+    // Only implement the relevant truck creation
+    Trucks* createFertiliserTruck(); // No need to override FarmFactory
 };
 
-#endif
+#endif // FERTILISERTRUCKFACTORY_H

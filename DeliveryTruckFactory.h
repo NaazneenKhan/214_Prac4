@@ -1,12 +1,13 @@
 #ifndef DELIVERYTRUCKFACTORY_H
 #define DELIVERYTRUCKFACTORY_H
+
 #include "FarmFactory.h"
 #include "DeliveryTruck.h"
-class DeliveryTruckFactory : public FarmFactory {
 
-
+class DeliveryTruckFactory {
 public:
-	Trucks* createDeliveryTruck();
+    // Only implement the relevant truck creation
+    Trucks* createDeliveryTruck(); // No need to override FarmFactory
 };
 
-#endif
+#endif // DELIVERYTRUCKFACTORY_H

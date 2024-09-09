@@ -66,6 +66,10 @@ CropField::CropField() : Farm("", 0), soilState(nullptr) {
   
 }
 
+void CropField::harvest()
+{
+}
+
 void CropField::setSoil(SoilState* newSoilState) {
     if (this->soilState != nullptr) {
         delete this->soilState;  

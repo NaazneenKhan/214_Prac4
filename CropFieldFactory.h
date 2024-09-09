@@ -1,12 +1,15 @@
 #ifndef CROPFIELDFACTORY_H
 #define CROPFIELDFACTORY_H
+
 #include "FarmFactory.h"
 #include "CropField.h"
+
+// CropFieldFactory is responsible for creating CropFields
 class CropFieldFactory : public FarmFactory {
-
-
 public:
-	Farm* createCropField(std::string cropType, int capacity, std::string soilstate);
+    // Create a CropField object with the specified crop type, capacity, and soil state
+    Farm* createCropField(std::string cropType, int capacity, std::string soilstate); //override;
+
 };
 
-#endif
+#endif // CROPFIELDFACTORY_H

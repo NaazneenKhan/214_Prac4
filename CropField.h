@@ -24,17 +24,21 @@ public:
     }
 
     int getTotalCapacity() override;
+
 	void setTotalCapacity(int newCapacity) override {
         capacity = newCapacity;
     }
 
 	std::string getCropType() override;
 
-	void addFarmUnit(Farm* farm) override;
+	void addFarmUnit(Farm* farm);// override;
 
-	void removeFarmUnit(Farm* farm) override;
+	void removeFarmUnit(Farm* farm);// override;
 
-	virtual Iterator* createIterator(bool useBFS) override;
+	virtual Iterator* createIterator(bool useBFS);// override;
+
+	int getCurrentAmount() override;
+
 	CropField();
 
 	virtual void harvest() override ;

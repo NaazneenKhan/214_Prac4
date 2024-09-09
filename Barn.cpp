@@ -43,3 +43,7 @@ void Barn::setCurrentAmount(int amount) {
 	currentAmount = amount;
 	notifyObservers();
 }
+
+void Barn::harvest()
+{
+}
