@@ -20,15 +20,17 @@ void DepthFirstTraversal::next() {
             return;
         }
 
+        std::cout << "Processing farm at: " << currentFarm << " with crop type: " << currentFarm->getCropType() << std::endl;
+
         if (currentFarm->getCropType() == "Wheat") {
             FertiliserTruck* truck = new FertiliserTruck();
-            truck->update(currentFarm);  
+            truck->update(currentFarm);
             std::cout << "FertiliserTruck dispatched for Wheat farm!" << std::endl;
         }
 
         if (currentFarm->getTotalCapacity() > 300) {
             DeliveryTruck* truck = new DeliveryTruck();
-            truck->update(currentFarm);  
+            truck->update(currentFarm);
             std::cout << "DeliveryTruck dispatched for farm with large capacity!" << std::endl;
         }
 
@@ -37,6 +39,7 @@ void DepthFirstTraversal::next() {
         std::cout << "here 2\n";
     }
 }
+
 
 
 bool DepthFirstTraversal::isDone()   {

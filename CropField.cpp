@@ -69,16 +69,22 @@ CropField::CropField() : Farm("", 0), soilState(nullptr) {
 }
 
 void CropField::harvest() {
-    std::cout << "Harvesting CropField: " << cropType << " with soil state: " << soilState->getName() << std::endl;
-    
-    // Adjust crop yield based on the soil state
-    if (soilState->getName() == "Fruitful") {
-        std::cout << "Great yield from the CropField!" << std::endl;
-    } else if (soilState->getName() == "Dry") {
-        std::cout << "Poor yield due to dry soil." << std::endl;
-    } else if (soilState->getName() == "Flooded") {
-        std::cout << "Yield reduced due to flooding." << std::endl;
-    }
+	if(soilState != nullptr){
+		
+		std::cout << "Harvesting CropField: " << cropType << " with soil state: " << soilState->getName() << std::endl;
+		
+		// Adjust crop yield based on the soil state
+	
+		if (soilState->getName() == "Fruitful") {
+			std::cout << "Great yield from the CropField!" << std::endl;
+		} else if (soilState->getName() == "Dry") {
+			std::cout << "Poor yield due to dry soil." << std::endl;
+		} else if (soilState->getName() == "Flooded") {
+			std::cout << "Yield reduced due to flooding." << std::endl;
+		}
+	} else {
+		std::cout << "Poor yield due to dry soil." << std::endl;
+	}
 }
 
 
