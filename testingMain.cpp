@@ -20,7 +20,7 @@ int main() {
     
     // Simulate harvesting for all farm units
     naaz->harvestAll();
-    std::cout << "here 1\n";
+   // std::cout << "here 1\n";
     // Notify trucks based on farm conditions
     naaz->notifyTrucks();
 
@@ -76,13 +76,13 @@ int main() {
 //     std::cout << "FarmUnit Total Capacity: " << farmUnit.getTotalCapacity() << std::endl;
 
 
-//     // decorator
-//     ExtraBarn decco1 =  ExtraBarn();
-//     Fertiliser decco2 =  Fertiliser();
+//     // // decorator
+//     // ExtraBarn decco1 =  ExtraBarn();
+//     // Fertiliser decco2 =  Fertiliser();
 
-//     // Test ExtraBarn decorator
-//     decco1.addExtraBarn();
-//     decco2.addFertiliser();
+//     // // Test ExtraBarn decorator
+//     // decco1.addExtraBarn();
+//     // decco2.addFertiliser();
  
 
 //     // Test Fertiliser decorator

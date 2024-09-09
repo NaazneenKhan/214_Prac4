@@ -21,11 +21,14 @@ public:
     virtual void harvest() = 0;
 
     virtual int getTotalCapacity() = 0;
+
     virtual void setTotalCapacity(int newCapacity) = 0;
 
     virtual int getCurrentAmount() = 0;
 
     virtual std::string getCropType() = 0;
+
+	virtual std::string getSoilStateName() =0;
 
     void addFarmUnit(Farm* farm);
 

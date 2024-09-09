@@ -30,6 +30,9 @@ public:
 
 	void removeFarmUnit(Farm* farm);// override;
 
+	virtual std::string getSoilStateName() {} ;
+
+
 	virtual Iterator* createIterator(bool useBFS)  ;
 
 	void setCurrentAmount(int amount);

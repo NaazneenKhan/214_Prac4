@@ -16,6 +16,9 @@ public:
 
 	int getTotalCapacity() override ;
 
+	virtual std::string getSoilStateName();
+
+
     void setTotalCapacity(int newCapacity);
 
 	int getCurrentAmount();

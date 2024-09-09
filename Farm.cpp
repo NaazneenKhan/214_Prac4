@@ -30,9 +30,9 @@ void Farm::removeObserver(Trucks* observer) {
 }
 
 void Farm::notifyObservers() {
-	std::cout <<"Farm observer\n";
+	//std::cout <<"Farm observer\n";
     for (Trucks* observer : trucks) {
-		std::cout <<"Farm observer - is it null\n";
+		//std::cout <<"Farm observer - is it null\n";
 		if(observer != nullptr){
 			observer->update(this);
 		}

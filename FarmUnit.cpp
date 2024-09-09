@@ -16,6 +16,15 @@ int FarmUnit::getTotalCapacity() {
     return totalCapacity;
 }
 
+std::string FarmUnit::getSoilStateName()
+{
+    std::string soilStates;
+    for (Farm* farm : farmLand) {
+        soilStates += farm->getCropType() + " ";
+    }
+    return soilStates;
+}
+
 void FarmUnit::setTotalCapacity(int newCapacity)
 { 
 	this->capacity = newCapacity;
