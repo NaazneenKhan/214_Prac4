@@ -71,4 +71,9 @@ void Farmer::notifyTrucks() {
     farm->notifyObservers();
 }
 
-
+Farmer::~Farmer()
+{
+    delete farm;  // Make sure Farmer owns farm and deletes it once
+    farm = nullptr;
+    std::cout << "Farmer destructor called\n";
+}

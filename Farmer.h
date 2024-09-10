@@ -27,12 +27,7 @@ public:
     void harvestAll();
     void notifyTrucks();
 
-	virtual ~Farmer() {
-        // If the farmer owns the farm, delete it
-        if (farm) {
-            delete farm;
-        }
-    }
+	virtual ~Farmer();
 };
 
 #endif // FARMER_H

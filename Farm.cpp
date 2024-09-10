@@ -42,13 +42,17 @@ void Farm::notifyObservers() {
 Farm::~Farm() {
     // Delete farm units
     for (Farm* unit : farmUnits) {
-        delete unit;
+        delete unit;  // Delete each farm unit (composite/leaf nodes)
+        unit = nullptr;  // Nullify to avoid dangling pointers
     }
-    farmUnits.clear(); // Not strictly necessary, but helps to avoid dangling pointers
+    farmUnits.clear();  // Clear vector after deletion
 
     // Delete observers (trucks)
     for (Trucks* truck : trucks) {
-        delete truck;
+        delete truck;  // Delete each observer
+        truck = nullptr;  // Nullify after deletion
     }
-    trucks.clear(); // Also optional, but ensures safety.
+    trucks.clear();  // Clear vector after deletion
+
+    std::cout << "farm destruction - farm units and observers(trucks) deleted\n";
 }

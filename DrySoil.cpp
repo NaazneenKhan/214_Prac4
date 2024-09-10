@@ -22,3 +22,8 @@ void DrySoil::rain(CropField* field) {
 std::string DrySoil::getName() const {
     return "Dry Soil";
 }
+
+DrySoil::~DrySoil()
+{
+     std::cout << "Destroying DrySoil" << std::endl;
+}

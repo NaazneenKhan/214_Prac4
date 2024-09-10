@@ -98,5 +98,11 @@ void CropField::setSoil(SoilState* newSoilState) {
 
 CropField::~CropField()
 {
-	delete soilState;
+	std::cout << "Destroying CropField with soil: " << soilState->getName() << std::endl;
+
+    if (soilState) {
+        delete soilState;
+        soilState = nullptr;  // Nullify to prevent double deletion
+    }
+
 }

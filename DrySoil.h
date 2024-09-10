@@ -18,7 +18,7 @@ public:
 
 	std::string  getName() const ;
 
-	~DrySoil() = default;
+	~DrySoil();
 };
 
 #endif
