@@ -19,6 +19,8 @@ public:
     void rain(CropField* field) ;
 
     std::string getName() const ;
+
+    ~FruitfulSoil() = default;
 };
 
 #endif

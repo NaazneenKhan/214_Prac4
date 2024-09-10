@@ -70,3 +70,5 @@ void Farmer::notifyTrucks() {
 
     farm->notifyObservers();
 }
+
+

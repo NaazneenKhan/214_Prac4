@@ -23,7 +23,6 @@ public:
         capacity = newCapacity;
     }
 
-
 	std::string getCropType() override;
 
 	void addFarmUnit(Farm* farm);// override;
@@ -38,6 +37,8 @@ public:
 	void setCurrentAmount(int amount);
 
 	virtual void harvest() override;
+
+	~Barn() = default;
 };
 
 #endif

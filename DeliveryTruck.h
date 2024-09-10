@@ -3,17 +3,16 @@
 #include "Trucks.h"
 #include "Barn.h"
 
-class Barn;
 
 class DeliveryTruck : public Trucks {
 
 private:
 	int currentAmount;
-	Barn* barn;
+	//Barn* barn;
 
 public:
+    DeliveryTruck(){}
     
-
     void update(Farm* farm) ;
 
 	void startEngine() ;
@@ -22,7 +21,9 @@ public:
 
 	void sellTruck();
 
-	virtual ~DeliveryTruck() {}
+	virtual ~DeliveryTruck() {
+		//delete barn; 
+	}
 };
 
 #endif

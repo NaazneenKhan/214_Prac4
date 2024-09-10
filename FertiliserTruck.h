@@ -11,12 +11,12 @@ class SoilState;
 class FertiliserTruck : public Trucks {
 
 private:
-	SoilState* soilState;
-	CropField* cropField;
+	// SoilState* soilState;
+	// CropField* cropField;
 
 public:
-    FertiliserTruck() : soilState(nullptr), cropField(nullptr) {}
-
+    FertiliserTruck(){}
+	
     void update(Farm* farm);
 
 	void startEngine()  ;
@@ -25,7 +25,10 @@ public:
 
 	void sellTruck() ;
 
-	virtual ~FertiliserTruck(){}
+	virtual ~FertiliserTruck(){
+		// delete soilState;  
+        // delete cropField; 
+	}
 };
 
 #endif

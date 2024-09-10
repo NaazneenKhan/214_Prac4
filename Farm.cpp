@@ -40,4 +40,15 @@ void Farm::notifyObservers() {
 }
 
 Farm::~Farm() {
+    // Delete farm units
+    for (Farm* unit : farmUnits) {
+        delete unit;
+    }
+    farmUnits.clear(); // Not strictly necessary, but helps to avoid dangling pointers
+
+    // Delete observers (trucks)
+    for (Trucks* truck : trucks) {
+        delete truck;
+    }
+    trucks.clear(); // Also optional, but ensures safety.
 }

@@ -33,6 +33,8 @@ public:
 
 	Iterator* createIterator(bool useBFS);// override;
 
+	~FarmUnit() = default;
+
 };
 
 #endif

@@ -4,6 +4,4 @@ Decorator::Decorator(Farm* farm) { //
 	this->farmLand = farm;
 }
 
-Decorator::Decorator() {
-	
-}
+

@@ -1,7 +1,7 @@
 #include "DeliveryTruck.h"
 
 void DeliveryTruck::update(Farm* farm){
-	std::cout << "feteliser Truck 1\n";
+	//std::cout << "feteliser Truck 1\n";
 	if (farm->getCurrentAmount() >= farm->getTotalCapacity() * 0.8) {
 		std::cout << "Delivery Truck dispatched to collect crops.\n";
 		startEngine();

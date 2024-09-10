@@ -22,6 +22,9 @@ public:
     bool isDone()  override ;
     
     Farm* currentFarm() override ;
+
+    virtual ~BreadthFirstTraversal() {
+    }
 };
 
 #endif // BREADTHFIRSTTRAVERSAL_H

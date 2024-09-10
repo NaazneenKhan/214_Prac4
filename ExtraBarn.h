@@ -19,6 +19,7 @@ public:
 
     virtual std::string getCropType() override { return cropType;};
 
+    ~ExtraBarn() = default;
 };
 
 #endif

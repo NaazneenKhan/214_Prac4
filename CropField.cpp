@@ -96,3 +96,7 @@ void CropField::setSoil(SoilState* newSoilState) {
 	notifyObservers();
 }
 
+CropField::~CropField()
+{
+	delete soilState;
+}

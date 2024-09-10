@@ -21,6 +21,9 @@ public:
     bool isDone() override  ;
 
     Farm* currentFarm() override  ;
+
+    virtual ~DepthFirstTraversal() {
+    }
 };
 
 #endif // DEPTHFIRSTTRAVERSAL_H

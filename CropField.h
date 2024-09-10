@@ -43,6 +43,8 @@ public:
 	virtual void harvest() override ;
 
 	void setSoil(SoilState* newsoilState);
+
+	~CropField();
 };
 
 #endif

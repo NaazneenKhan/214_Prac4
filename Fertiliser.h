@@ -20,6 +20,7 @@ public:
 
     virtual std::string getCropType() override { return cropType;};
 
+	~Fertiliser() = default;
 };
 
 #endif

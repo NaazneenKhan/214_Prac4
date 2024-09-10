@@ -10,13 +10,15 @@ class DrySoil : public SoilState {
 public:
    // DrySoil(std::string soilName);
 
-   DrySoil();
+    DrySoil();
 
 	void harvestCrops(CropField* field) ;
 
 	void rain(CropField* field) ;
 
 	std::string  getName() const ;
+
+	~DrySoil() = default;
 };
 
 #endif

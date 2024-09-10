@@ -7,7 +7,7 @@ public:
 	Farm* farmLand;
 	Decorator(Farm* farm);
 
-	Decorator();
+	Decorator() : farmLand(nullptr){}
 
 	virtual void harvest(){}
 
@@ -21,7 +21,7 @@ public:
 
     virtual std::string getCropType() override { return cropType;};
 
-	virtual ~Decorator(){};
+	virtual ~Decorator(){  delete farmLand;};
 };
 
 #endif
