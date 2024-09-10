@@ -5,6 +5,7 @@
 #include <string>
 #include "Trucks.h"
 #include "Iterator.h"
+#include "SoilState.h"
 
 class Farm {
 protected:

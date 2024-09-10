@@ -38,7 +38,7 @@ void CropField::removeFarmUnit(Farm *farm)
 
 std::string CropField::getSoilStateName() {
 	
-	return soilState->getName();
+    return soilState ? soilState->getName() : "Unknown Soil"; // Safe check for nullptr
 	
 }
 
