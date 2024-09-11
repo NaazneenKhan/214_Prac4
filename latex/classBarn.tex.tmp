@@ -1,0 +1,53 @@
+\hypertarget{classBarn}{}\doxysection{Barn Class Reference}
+\label{classBarn}\index{Barn@{Barn}}
+
+
+Inheritance diagram for Barn\+:
+% FIG 0
+
+
+Collaboration diagram for Barn\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBarn_a120c0ab2a93f15d0192bce4c3c54f099}\label{classBarn_a120c0ab2a93f15d0192bce4c3c54f099}} 
+{\bfseries Barn} (std\+::string crop\+Type, int capacity, int current\+Amount)
+\item 
+\mbox{\Hypertarget{classBarn_a50313e9a370dc6220e3e40d8c05f98a5}\label{classBarn_a50313e9a370dc6220e3e40d8c05f98a5}} 
+int {\bfseries get\+Current\+Amount} () override
+\item 
+\mbox{\Hypertarget{classBarn_a29d4e4a73aac0069ab82e79ebcc7feef}\label{classBarn_a29d4e4a73aac0069ab82e79ebcc7feef}} 
+int {\bfseries get\+Total\+Capacity} () override
+\item 
+\mbox{\Hypertarget{classBarn_a42a26f83bab80a3f892518ab15eba588}\label{classBarn_a42a26f83bab80a3f892518ab15eba588}} 
+void {\bfseries set\+Total\+Capacity} (int new\+Capacity) override
+\item 
+\mbox{\Hypertarget{classBarn_a8b0bee79154e5cbd3cb2d608f2e06c5b}\label{classBarn_a8b0bee79154e5cbd3cb2d608f2e06c5b}} 
+std\+::string {\bfseries get\+Crop\+Type} () override
+\item 
+\mbox{\Hypertarget{classBarn_a63782e1d43f4770c0e27f62578683f9f}\label{classBarn_a63782e1d43f4770c0e27f62578683f9f}} 
+void {\bfseries add\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classBarn_a7cd47368d0e18acc38edad5ba3520246}\label{classBarn_a7cd47368d0e18acc38edad5ba3520246}} 
+void {\bfseries remove\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classBarn_a81a52774d469ea7cdfa40f336119574e}\label{classBarn_a81a52774d469ea7cdfa40f336119574e}} 
+virtual std\+::string {\bfseries get\+Soil\+State\+Name} ()
+\item 
+\mbox{\Hypertarget{classBarn_aa67ef2e541291819751894ff0167ebcf}\label{classBarn_aa67ef2e541291819751894ff0167ebcf}} 
+virtual \mbox{\hyperlink{classIterator}{Iterator}} $\ast$ {\bfseries create\+Iterator} (bool use\+BFS)
+\item 
+\mbox{\Hypertarget{classBarn_a21ab4461d451d24407078aacac753fed}\label{classBarn_a21ab4461d451d24407078aacac753fed}} 
+void {\bfseries set\+Current\+Amount} (int amount)
+\item 
+\mbox{\Hypertarget{classBarn_a48c317fc05c59845f8c7b7ab695d21e4}\label{classBarn_a48c317fc05c59845f8c7b7ab695d21e4}} 
+virtual void {\bfseries harvest} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Barn.\+h\item 
+Barn.\+cpp\end{DoxyCompactItemize}

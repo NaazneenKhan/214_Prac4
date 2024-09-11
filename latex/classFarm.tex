@@ -1,0 +1,69 @@
+\hypertarget{classFarm}{}\doxysection{Farm Class Reference}
+\label{classFarm}\index{Farm@{Farm}}
+
+
+Inheritance diagram for Farm\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFarm_a54a55884859d0e9d405eaad0bbcfb15a}\label{classFarm_a54a55884859d0e9d405eaad0bbcfb15a}} 
+{\bfseries Farm} (std\+::string crop\+Type, int capacity)
+\item 
+\mbox{\Hypertarget{classFarm_a327296903c2e7f41f638a2dd58faefce}\label{classFarm_a327296903c2e7f41f638a2dd58faefce}} 
+virtual void {\bfseries harvest} ()=0
+\item 
+\mbox{\Hypertarget{classFarm_a8e5e05f5298d4ad7d15aefb88d3658ad}\label{classFarm_a8e5e05f5298d4ad7d15aefb88d3658ad}} 
+virtual int {\bfseries get\+Total\+Capacity} ()=0
+\item 
+\mbox{\Hypertarget{classFarm_a5127436d8f0111969c4bc39727869464}\label{classFarm_a5127436d8f0111969c4bc39727869464}} 
+virtual void {\bfseries set\+Total\+Capacity} (int new\+Capacity)=0
+\item 
+\mbox{\Hypertarget{classFarm_a89860c40a5c89cb7af73dbe56f9d8405}\label{classFarm_a89860c40a5c89cb7af73dbe56f9d8405}} 
+virtual int {\bfseries get\+Current\+Amount} ()=0
+\item 
+\mbox{\Hypertarget{classFarm_a0fa7665a2d2f8dce3dd4edb02ce5559f}\label{classFarm_a0fa7665a2d2f8dce3dd4edb02ce5559f}} 
+virtual std\+::string {\bfseries get\+Crop\+Type} ()=0
+\item 
+\mbox{\Hypertarget{classFarm_a2a945513377b135b540674d84e7b8da2}\label{classFarm_a2a945513377b135b540674d84e7b8da2}} 
+virtual std\+::string {\bfseries get\+Soil\+State\+Name} ()=0
+\item 
+\mbox{\Hypertarget{classFarm_ab94297e9791883fa572981f433a9f8ce}\label{classFarm_ab94297e9791883fa572981f433a9f8ce}} 
+void {\bfseries add\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classFarm_afd573ea8c93a68519c2909271a6b1004}\label{classFarm_afd573ea8c93a68519c2909271a6b1004}} 
+void {\bfseries remove\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classFarm_a1247899eae10b875e63f2cd5389f72de}\label{classFarm_a1247899eae10b875e63f2cd5389f72de}} 
+std\+::vector$<$ \mbox{\hyperlink{classFarm}{Farm}} $\ast$ $>$ \& {\bfseries get\+Farm\+Units} ()
+\item 
+\mbox{\Hypertarget{classFarm_a42a30447855f1085a5f314c33049daa2}\label{classFarm_a42a30447855f1085a5f314c33049daa2}} 
+void {\bfseries add\+Observer} (\mbox{\hyperlink{classTrucks}{Trucks}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classFarm_ab8146e8fe42216f12e5f2f24335e7854}\label{classFarm_ab8146e8fe42216f12e5f2f24335e7854}} 
+void {\bfseries remove\+Observer} (\mbox{\hyperlink{classTrucks}{Trucks}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classFarm_af2d039352665b656365ace7cf5bd16a9}\label{classFarm_af2d039352665b656365ace7cf5bd16a9}} 
+void {\bfseries notify\+Observers} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFarm_aee31b740ed4faeb01841c26091fe70bc}\label{classFarm_aee31b740ed4faeb01841c26091fe70bc}} 
+std\+::string {\bfseries crop\+Type}
+\item 
+\mbox{\Hypertarget{classFarm_abb55ecd0a670a7a935753402f1b983cf}\label{classFarm_abb55ecd0a670a7a935753402f1b983cf}} 
+int {\bfseries capacity}
+\item 
+\mbox{\Hypertarget{classFarm_a554f3acdf5c21addf233a122ecbb56ad}\label{classFarm_a554f3acdf5c21addf233a122ecbb56ad}} 
+std\+::vector$<$ \mbox{\hyperlink{classFarm}{Farm}} $\ast$ $>$ {\bfseries farm\+Units}
+\item 
+\mbox{\Hypertarget{classFarm_a7b6b13b88c64bfbec63c90fead365379}\label{classFarm_a7b6b13b88c64bfbec63c90fead365379}} 
+std\+::vector$<$ \mbox{\hyperlink{classTrucks}{Trucks}} $\ast$ $>$ {\bfseries trucks}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Farm.\+h\item 
+Farm.\+cpp\end{DoxyCompactItemize}

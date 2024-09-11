@@ -1,0 +1,56 @@
+\hypertarget{classCropField}{}\doxysection{Crop\+Field Class Reference}
+\label{classCropField}\index{CropField@{CropField}}
+
+
+Inheritance diagram for Crop\+Field\+:
+% FIG 0
+
+
+Collaboration diagram for Crop\+Field\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCropField_a8b772aec5e789d08cbc8b94e43403ae0}\label{classCropField_a8b772aec5e789d08cbc8b94e43403ae0}} 
+{\bfseries Crop\+Field} (std\+::string crop\+Type, int capacity, std\+::string soilstate)
+\item 
+\mbox{\Hypertarget{classCropField_a9bf74d60a7d97ab75161e8963629d214}\label{classCropField_a9bf74d60a7d97ab75161e8963629d214}} 
+std\+::string {\bfseries get\+Crop\+Type} () override
+\item 
+\mbox{\Hypertarget{classCropField_a4bab7fed3bd7b0b8ea09c39bc8c09bcd}\label{classCropField_a4bab7fed3bd7b0b8ea09c39bc8c09bcd}} 
+std\+::string {\bfseries get\+Soil\+State\+Name} ()
+\item 
+\mbox{\Hypertarget{classCropField_a8f17d84307cc980a17a1d1c9b4b57ec4}\label{classCropField_a8f17d84307cc980a17a1d1c9b4b57ec4}} 
+\mbox{\hyperlink{classSoilState}{Soil\+State}} $\ast$ {\bfseries get\+Soil\+State} () const
+\item 
+\mbox{\Hypertarget{classCropField_af1b12b634e4d6cd9e9b8fb1d36107424}\label{classCropField_af1b12b634e4d6cd9e9b8fb1d36107424}} 
+int {\bfseries get\+Total\+Capacity} () override
+\item 
+\mbox{\Hypertarget{classCropField_a6ab2b078809148f16171871fb13fd847}\label{classCropField_a6ab2b078809148f16171871fb13fd847}} 
+void {\bfseries set\+Total\+Capacity} (int new\+Capacity) override
+\item 
+\mbox{\Hypertarget{classCropField_a32af061c503c3fd604c6f1f543d3ea2a}\label{classCropField_a32af061c503c3fd604c6f1f543d3ea2a}} 
+void {\bfseries add\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classCropField_aed462e1921347d96a4f637f4b54979b5}\label{classCropField_aed462e1921347d96a4f637f4b54979b5}} 
+void {\bfseries remove\+Farm\+Unit} (\mbox{\hyperlink{classFarm}{Farm}} $\ast$farm)
+\item 
+\mbox{\Hypertarget{classCropField_af58cb751b4d16817ccf777cd9821f824}\label{classCropField_af58cb751b4d16817ccf777cd9821f824}} 
+virtual \mbox{\hyperlink{classIterator}{Iterator}} $\ast$ {\bfseries create\+Iterator} (bool use\+BFS)
+\item 
+\mbox{\Hypertarget{classCropField_acd3338752bdc6fadcd7f414729177893}\label{classCropField_acd3338752bdc6fadcd7f414729177893}} 
+virtual int {\bfseries get\+Current\+Amount} () override
+\item 
+\mbox{\Hypertarget{classCropField_aec2c68c6c6d64be490c06d0bf173492f}\label{classCropField_aec2c68c6c6d64be490c06d0bf173492f}} 
+virtual void {\bfseries harvest} () override
+\item 
+\mbox{\Hypertarget{classCropField_ad6c0eb800048f81222f588d5a090c577}\label{classCropField_ad6c0eb800048f81222f588d5a090c577}} 
+void {\bfseries set\+Soil} (\mbox{\hyperlink{classSoilState}{Soil\+State}} $\ast$newsoil\+State)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Crop\+Field.\+h\item 
+Crop\+Field.\+cpp\end{DoxyCompactItemize}
